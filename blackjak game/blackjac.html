@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .first{
+        height: 80%;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background:  rgb(91, 139, 18);
+        border-radius: 2rem;
+        box-shadow: -10px 5px 5px rgb(156, 155, 154);
+    }
+
+    .time{
+        color: rgb(171, 177, 153);
+        font-size: 2.5rem;
+        font-family: monospace;
+        font-weight: 600;
+    }
+
+    .info{
+        height: 20%;
+    }
+
+    h1{
+        font-weight: bold;
+        font-size: 3.5rem;
+        margin-top: 1rem;
+        color: rgb(9, 68, 22);
+        letter-spacing: 10px;
+        font-family: fantasy; 
+        filter: drop-shadow(-4px 3px 3px rgb(90, 63, 63));
+    }
+
+    .message-el{
+        color: rgb(238, 235, 71);
+        text-align: center;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        font-family: cursive;
+    }
+
+    .sum-card{
+        height: 30%;
+        width: auto;
+    }
+
+    .card-el{
+        color: white;
+        font-weight: bolder;
+        font-size: 1.4rem;
+    }
+
+    .sum-el{
+        color: moccasin;
+        letter-spacing: 2px;
+        font-weight: bolder;
+        font-size: 1.4rem;
+    }
+
+    .butt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        height: auto;
+        width: 60%;
+    }
+
+    button{
+        width: 60%;
+        height: 2rem;
+        border-radius: .6rem;
+        background-color: moccasin;
+        color: black;
+        outline: none;
+        border: 1px solid black;
+        font-size: 1rem;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    .res{
+        height: 30%;
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        background: rgb(41, 38, 38);
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #player-el{
+        color: rgb(238, 235, 71);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+        font-size: 1.3rem;
+        font-family: -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+        'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    span{
+        color: rgb(238, 235, 71);
+        font-family: cursive;
+    }
+    
+</style>
+<body>
+    <section class="first">
+            <p class="time">BINARY TECH GAME</p>
+
+        <div class="info">
+            <h1>BLACKJACK CARD GAME</h1>
+            <p class="message-el"><i></i>Ready to play blackJack Game! &#128512</i></p>
+        </div>
+
+        <div class="sum-card">
+            <p class="card-el">CARD :  0 0</p>
+            <p class="sum-el">SUM : 0</p>
+        </div>
+
+        <div class="butt">
+            <button class="start-game" onclick="startGame()">START GAME</button>
+            <button class="new-card" onclick="newCard()">NEW CARD</button>
+        </div>
+
+        <div class="res">
+            <p id="player-el">Binary: <span> #145</span></p>
+        </div>
+    </section>
+</body>
+<script src="index.js"></script>
+</html>
